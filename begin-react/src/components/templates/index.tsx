@@ -2,7 +2,6 @@ import { FC, ReactNode } from "react";
 import Head from "next/head";
 import { Header } from "src/components/organisms/Header";
 import { Footer } from "src/components/organisms/Footer";
-import { Body } from "src/components/organisms/Body";
 
 type Props = {
   title: string;
@@ -18,7 +17,6 @@ export const Template: FC<Props> = ({ title, children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Body />
       {children}
       <Footer />
     </div>
