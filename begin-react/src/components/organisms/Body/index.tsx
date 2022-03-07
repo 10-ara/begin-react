@@ -9,7 +9,6 @@ export const Body: FC = () => {
   const handleDecrement = () => setCount(count - 1);
 
   const [tag, setTag] = useState<string[]>([]);
-  console.log(tag);
   const handleClearTag = () => setTag([]);
   const handlePushTag = (addTag: string) => {
     if (tag.some(t => t === addTag)) {
